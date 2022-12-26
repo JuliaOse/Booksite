@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+
+  <title>Booksite</title>
+  <style>
+    * {
+
+      margin: 0 auto;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+      overflow-x: hidden;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: -120px;
+      display: inline;
+    }
+
+
+    li {
+      display: inline-block;
+      padding: 0px 30px;
+      font-family: 'Inconsolata', monospace;
+
+    }
+
+    li:hover {
+      background-color: #43434372;
+      border-radius: 18px;
+      font-weight: 900;
+      color: #600808;
+    }
+
+    nav {
+      margin: 0 auto;
+      width: 100%;
+      line-height: 2.5;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(211, 1%, 27%, 0.2);
+    }
+
+    hr {
+      border: 2px double rgb(22, 9, 9);
+    }
+
+    h1 {
+      font-size: 50px;
+      margin: 100px 500px 0px 70px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 50px;
+      padding: 50px;
+      position: absolute;
+      top: 0;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-family: sans-serif;
+    }
+
+    h3 {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      font-family: 'Inconsolata', monospace;
+    }
+
+    button {
+      padding: 10px 30px;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      background-color: #ccccccc6;
+      border: 2px solid #EB5E28;
+      border-radius: 17px;
+      font-size: 15px;
+      box-shadow: 3px 3px 1px 0px rgb(0, 0, 0);
+      -webkit-box-shadow: 3px 3px 1px 0px rgb(0, 0, 0);
+      -moz-box-shadow: 3px 3px 1px 0px rgb(0, 0, 0);
+      font-family: "Times New Roman",
+        Times,
+        serif;
+
+
+    }
+
+
+    @keyframes button-gradient-animation {
+      0% {
+        background-position: 150% 50%;
+      }
+
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+
+    button:hover {
+      transform: translateY(2px);
+      background: linear-gradient(90deg, #ccccccc6, #ffffff, #ccccccc6);
+      background-size: 300% 300%;
+      animation: button-gradient-animation 700ms ease-in-out forwards;
+      box-shadow: none;
+      border: 2px solid rgb(240, 196, 139);
+    }
+
+    section {
+      max-width: 100%;
+      min-height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex: none;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: center;
+
+    }
+
+
+
+
+    .material-symbols-outlined {
+      display: none;
+    }
+
+
+    @media screen and (max-width: 800px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      h2 {
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        padding: 0;
+        font-size: 25px;
+        display: block;
+        margin: 0 auto;
+        /* word-wrap: break-word; */
+      }
+
+      button {
+        padding: 7px 15px;
+      }
+
+      .library-paragraph p {
+        /*  margin-top: 30px; */
+        width: 50%;
+      }
+
+
+      .logo {
+
+        transition: transform 250ms ease;
+      }
+
+      .logo[data-visible="true"] {
+        transform: translateX(45vw);
+        transition: transform 1s ease;
+
+      }
+
+      .buttons[data-visible="true"] {
+        animation: fadeout 700ms forwards ease;
+      }
+
+
+      @keyframes fadeout {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .quotes {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 35px;
+      }
+
+      section {
+        max-width: 100%;
+        min-height: 100%;
+      }
+
+      span {
+        font-size: 0px;
+      }
+
+      .material-symbols-outlined {
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+        display: block;
+        top: 0px;
+        left: -10px;
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 200,
+          'GRAD' 0,
+          'opsz' 48
+      }
+
+
+      ul {
+        /* margin-top: 30px */
+        /* border: 2px solid rgba(68, 69, 70, 0.754); */
+        border-left: none;
+        backdrop-filter: blur(3px);
+        justify-content: center;
+        align-items: stretch;
+        list-style: circle;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        inset: 0 45% 0% 0;
+        background: #dbdbdbad;
+        -webkit-backdrop-filter: blur(3px);
+
+
+        transform: translateX(-100%);
+
+
+      }
+
+      ul[data-visible="true"] {
+        transition: transform 800ms ease;
+        transform: translateX(10%);
+      }
+
+      .material-symbols-outlined[aria-expanded="true"] {
+        opacity: 0;
+      }
+
+      .close-button[aria-expanded="true"] {
+        animation: closebutton 1s ease 200ms forwards;
+      }
+
+
+      @keyframes closebutton {
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .book-image {
+        animation: none;
+
+      }
+
+      @keyframes slideshow {
+
+        100% {
+          transform: translateX(50%);
+        }
+      }
+
+      .library {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .library-paragraph {
+        flex-wrap: wrap;
+      }
+
+      #about-section img {
+        width: 350px;
+        display: block;
+        margin: 0 auto;
+
+      }
+
+      .quotes {
+
+        font-size: 19px;
+        flex-wrap: wrap;
+        font-size: 10px;
+        display: block;
+        margin: 0 20px;
+        font-size: 8vw;
+
+
+      }
+
+
+      #about-section p {
+        width: 100%;
+        margin: 20px auto;
+      }
+
+      #about-section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      section:nth-of-type(2) img {
+        width: 200px;
+        height: 50%;
+      }
+
+      section:nth-of-type(3) img {
+        display: block;
+        margin: 0 auto;
+
+        width: 50%;
+        height: 50%;
+
+
+      }
+
+      section:nth-of-type(3) {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      section:nth-of-type(4) {
+        width: 100%;
+      }
+
+
+    }
+
+
+    section:nth-of-type(1) {
+      margin: 0;
+      padding: 0;
+      background-image: url(/images/pexels-martin-péchy-922100.jpg);
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    section:nth-of-type(2) {
+      margin: 0 auto;
+      padding: 0;
+      overflow: scroll;
+      display: flex;
+      justify-content: flex-start;
+
+      align-items: center;
+      background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+      width: 100vw;
+      height: 100vh;
+
+
+    }
+
+
+    section:nth-of-type(3) img {
+      max-width: 600px;
+
+      border-radius: 200%;
+
+      border: 1px solid #EB5E28;
+    }
+
+    section:nth-of-type(2) img {
+      max-width: 300px;
+      max-height: 600px;
+    }
+
+    section:nth-of-type(3) {
+      animation: animateBg 30s linear infinite;
+      background: linear-gradient(to top, #000000, #3B3C3E, #434343);
+      background-size: 100%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    section:nth-of-type(4) {
+      /* background-image: url(/books/mesh-590.png); */
+      background: linear-gradient(117deg, red, blue, rgba(0, 0, 0, 0.547), gold, aliceblue);
+      background-size: cover;
+      animation: bg 19s linear infinite alternate;
+      background-size: 800% 100%;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    section:nth-of-type(4) img {
+      max-width: 700px;
+    }
+
+    section:nth-of-type(4) h3 {
+      font-size: 40px;
+      opacity: 0.4;
+      color: #000000;
+      font-family: 'Train One', cursive;
+    }
+
+    @keyframes bg {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 100%;
+      }
+    }
+
+
+
+    @keyframes slide {
+      0% {
+        transform: translateX(30px);
+      }
+
+
+
+      100% {
+        transform: translateX(-10px);
+      }
+    }
+
+    .library {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+
+    }
+
+
+    .library-paragraph {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+
+
+    }
+
+    .library p {
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      display: flex;
+    }
+
+    .quotes {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Kalam', cursive;
+
+    }
+
+    .book-image {
+      margin: 20px;
+      padding: 0;
+      animation: slide 10s ease-in-out infinite alternate;
+
+    }
+
+    .book-image img {
+      filter: brightness(80%);
+      max-width: 400px;
+      min-height: 500px;
+
+    }
+
+    .book-image img:hover {
+      filter: brightness(130%);
+      border: 2px solid black;
+      border-radius: 10px;
+      box-shadow: -30px 30px 11px -8px rgba(0, 0, 0, 0.69);
+      -webkit-box-shadow: -30px 30px 11px -8px rgba(0, 0, 0, 0.69);
+      -moz-box-shadow: -30px 30px 11px -8px rgba(0, 0, 0, 0.69);
+      animation: float 962ms forwards ease;
+    }
+
+    @keyframes float {
+      to {
+        transform: translate(11px, -27px);
+      }
+    }
+
+    .library {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      /* margin: 100px 570px 100px 70px; */
+      margin-top: 90px;
+      margin-right: 100px;
+      margin-left: 20px;
+
+      width: 60%;
+
+
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px;
+      /* width: 70%; */
+    }
+
+    .title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-left: -17vw;
+
+    }
+
+    .logo {
+      position: relative;
+      top: 7px;
+
+    }
+
+
+
+    .join-button {
+      margin: 20px;
+    }
+
+    .open-close-buttons {
+      display: flex;
+    }
+
+    .close-button {
+      opacity: 0;
+      margin-left: -24px;
+    }
+
+
+    .title span {
+      padding: 10px 0;
+      display: block;
+      font-weight: 900;
+      font-family: 'Unbounded', cursive;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+    }
+
+    #about-section {
+      display: flex;
+    }
+
+    #landing-page {
+      background-image: url(/books/pexels-martin-péchy-922100.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      max-width: 100%;
+    }
+
+    #books {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: scroll;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div id="landing-page">
+      <nav>
+
+        <div class="lists">
+          <ul class="ul" data-visible="false" aria-expanded="false">
+            <a href="#books">
+              <li>Books</li>
+            </a>
+            <a href="#library">
+              <li>Library</li>
+            </a>
+            <a href="#about-section">
+              <li>About</li>
+            </a>
+          </ul>
+
+
+          <div class="open-close-buttons">
+            <div><span class="material-symbols-outlined">
+                menu
+              </span></div>
+
+            <div class="close-button" aria-expanded="false"><span class="material-symbols-outlined">
+                close
+              </span></div>
+
+          </div>
+
+
+        </div>
+
+        <a href="project.html">
+          <div class="title">
+            <div class="logo" data-visible="false">
+              <a href="project.html">
+                <img src="/images/open-book.png" alt="logo" width="40px">
+              </a>
+            </div>
+            <div><span>BookSite</span></div>
+          </div>
+        </a>
+        <div class="buttons" data-visible="false">
+          <a href="join-us.html"><button class="join-button">Join us</button></a>
+
+
+        </div>
+
+
+      </nav>
+
+      <div class="contents">
+
+        <div>
+          <h1>Welcome readers!🙋</h1>
+        </div>
+        <div class="paragraph">
+          <div>
+            <p>
+              "But Art is a punitive sentence, not a birthright, & there is
+              nothing in my early life that suggests artistick aptitude or even
+              interest, my pastimes & fascinations nearly all being what may – &
+              were – deemed the merely villainous. And though I am, of course, the
+              hero of this, my own tale, if only because I can’t really imagine
+              anyone else wanting to be, my story is no remade myth of Orpheus,
+              but the story of a sewer rat made worse."
+            </p>
+          </div>
+
+          <div><button class="join-button">Start Reading</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+
+    <div class="book-image">
+      <a href="https://www.google.com/search?q=the+book+thief&oq=the&aqs=chrome.1.69i59l3j69i57j0i67j69i60l3.2149j0j7&sourceid=chrome&ie=UTF-8"
+        target="_blank">
+        <img src="https://torontopubliclibrary.typepad.com/.a/6a00e5509ea6a1883401b8d21891fe970c-pi"
+          alt="the book thief" /></a>
+    </div>
+    <div class="book-image">
+      <a href="https://www.britannica.com/topic/Animal-Farm" target="_blank"><img
+          src="https://booksupnorth.com/wp-content/uploads/2021/01/AnimalFarm-scaled.jpg" alt="books" width="400px"
+          height="300px" /></a>
+    </div>
+    <div class="book-image">
+      <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice" target="_blank"><img
+          src="https://img1.od-cdn.com/ImageType-400/2389-1/112/3FE/D8/%7B1123FED8-AAD0-4DD8-98C6-3F9FA3AAADC9%7DImg400.jpg"
+          alt="books" width="400px" height="300px" /></a>
+    </div>
+    <div class="book-image">
+      <a href="https://en.wikipedia.org/wiki/Oliver_Twist" target="_blank">
+        <img
+          src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781787557840/oliver-twist-9781787557840_hr.jpg"
+          alt="books" width="400px" height="500px" /></a>
+    </div>
+    <div class="book-image">
+      <img src="/images/annie-spratt-gl7joOaABlI-unsplash.jpg" alt="old books" width="400px" height="500px" />
+    </div>
+    <div class="book-image">
+      <a href="https://www.goodreads.com/book/show/1934.Little_Women" target="_blank">
+        <img
+          src="https://kbimages1-a.akamaihd.net/f7c39f83-b19a-4566-88cb-c13236e6178e/1200/1200/False/little-women-159.jpg"
+          alt="books" width="400px" height="500px" /></a>
+    </div>
+
+
+
+  </section>
+
+  <section id="library">
+
+
+    <h2>Let's find you a library nearby☺️</h2>
+
+    <div class="library">
+      <div>
+        <img class="library-image" src="/images/pexels-pixabay-256559.jpg" alt="library" width="650px" height="550px" />
+      </div>
+
+      <div class="library-paragraph">
+        <div>
+          <p>
+            Libraries play a very important role in the promotion of knowledge.
+            A library is said to be the treasure-house of wisdom, experience,
+            secrets of success, causes of failure and suggestion for improvement
+            in future life.
+          </p>
+        </div>
+        <div>
+          <a href="https://www.google.com/search?q=library+near+me&oq=library+near+me&aqs=chrome..69i57j0i402l2j0i512l7.6634j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank"><button>Find
+              a library</button></a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <section>
+
+
+    <div id=#about">
+      <svg width="100%" height="10%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <style>
+          .path-0 {
+            animation: pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-0 {
+            0% {
+              d: path("M 0,400 C 0,400 0,80 0,80 C 37.39230484541365,84.56336142268785 74.7846096908273,89.12672284537568 116,95 C 157.2153903091727,100.87327715462432 202.25386608210442,108.05647004118508 238,97 C 273.7461339178956,85.94352995881492 300.199925980755,56.64739698988404 346,60 C 391.800074019245,63.35260301011596 456.94642999487564,99.3539419992788 498,102 C 539.0535700051244,104.6460580007212 556.0143540397426,73.93683501300082 588,59 C 619.9856459602574,44.06316498699918 666.9961538461538,44.89871794871795 714,52 C 761.0038461538462,59.10128205128205 808.0010305756421,72.46829319212739 850,76 C 891.9989694243579,79.53170680787261 928.9997238512782,73.22810928277248 969,72 C 1009.0002761487218,70.77189071722752 1052.000074019245,74.61926967678264 1094,75 C 1135.999925980755,75.38073032321736 1176.9999800717417,72.29481201009699 1214,67 C 1251.0000199282583,61.70518798990302 1284.0000056937881,54.20148228282943 1321,56 C 1357.9999943062119,57.79851771717057 1398.999997153106,68.89925885858528 1440,80 C 1440,80 1440,400 1440,400 Z");
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,80 0,80 C 35.98278008692516,94.82086014158553 71.96556017385032,109.64172028317105 109,108 C 146.03443982614968,106.35827971682895 184.12053939152386,88.2539790089013 220,82 C 255.87946060847614,75.7460209910987 289.55228226005426,81.34236368122379 338,80 C 386.44771773994574,78.65763631877621 449.67033156825914,70.37656626620358 498,73 C 546.3296684317409,75.62343373379642 579.7663914669095,89.15137125396191 618,95 C 656.2336085330905,100.84862874603809 699.2641025641026,99.01794871794871 736,97 C 772.7358974358974,94.98205128205129 803.1771982766802,92.7768338742432 833,87 C 862.8228017233198,81.2231661257568 892.0271043291768,71.87471578507848 939,67 C 985.9728956708232,62.12528421492152 1050.7143844066125,61.72430298544289 1093,63 C 1135.2856155933875,64.27569701455711 1155.1153580443734,67.22807227314998 1192,77 C 1228.8846419556266,86.77192772685002 1282.8241834158932,103.36340792195715 1327,105 C 1371.1758165841068,106.63659207804285 1405.5879082920533,93.31829603902142 1440,80 C 1440,80 1440,400 1440,400 Z");
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,80 0,80 C 45.56049934521437,74.87848317485623 91.12099869042873,69.75696634971247 128,73 C 164.87900130957127,76.24303365028753 193.07650458349934,87.85061777600636 234,91 C 274.92349541650066,94.14938222399364 328.57298297557367,88.84056254626203 367,79 C 405.42701702442633,69.15943745373797 428.631563514206,54.787132038945515 469,62 C 509.368436485794,69.21286796105449 566.9007629676023,98.01090929795593 614,97 C 661.0992370323977,95.98909070204407 697.7653846153847,65.16923076923078 736,64 C 774.2346153846153,62.83076923076923 814.0376985708592,91.312167625121 848,91 C 881.9623014291408,90.687832374879 910.0838211011786,61.582098730285246 952,56 C 993.9161788988214,50.417901269714754 1049.6270170244263,68.35943745373798 1086,73 C 1122.3729829755737,77.64056254626202 1139.408110801116,68.98015145476285 1181,71 C 1222.591889198884,73.01984854523715 1288.7405397711098,85.71995672721062 1336,89 C 1383.2594602288902,92.28004327278938 1411.629730114445,86.14002163639469 1440,80 C 1440,80 1440,400 1440,400 Z");
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,80 0,80 C 33.48708743760555,73.10816868796144 66.9741748752111,66.21633737592286 110,71 C 153.0258251247889,75.78366262407714 205.59038793676103,92.24281918426998 246,95 C 286.40961206323897,97.75718081573002 314.66427337774485,86.81238588699729 355,87 C 395.33572662225515,87.18761411300271 447.7525185522595,98.5076372677409 485,95 C 522.2474814477405,91.4923627322591 544.3256524132172,73.15706504203914 582,73 C 619.6743475867828,72.84293495796086 672.9448717948717,90.86410256410255 718,95 C 763.0551282051283,99.13589743589745 799.8948604072958,89.38652470155061 835,82 C 870.1051395927042,74.61347529844939 903.4756865759457,69.58979862969501 942,74 C 980.5243134240543,78.41020137030499 1024.202393288922,92.25428077966939 1075,98 C 1125.797606711078,103.74571922033061 1183.714740268367,101.39307825162747 1221,93 C 1258.285259731633,84.60692174837253 1274.9386456376094,70.17340621382073 1308,67 C 1341.0613543623906,63.82659378617928 1390.5306771811952,71.91329689308964 1440,80 C 1440,80 1440,400 1440,400 Z");
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,80 0,80 C 37.39230484541365,84.56336142268785 74.7846096908273,89.12672284537568 116,95 C 157.2153903091727,100.87327715462432 202.25386608210442,108.05647004118508 238,97 C 273.7461339178956,85.94352995881492 300.199925980755,56.64739698988404 346,60 C 391.800074019245,63.35260301011596 456.94642999487564,99.3539419992788 498,102 C 539.0535700051244,104.6460580007212 556.0143540397426,73.93683501300082 588,59 C 619.9856459602574,44.06316498699918 666.9961538461538,44.89871794871795 714,52 C 761.0038461538462,59.10128205128205 808.0010305756421,72.46829319212739 850,76 C 891.9989694243579,79.53170680787261 928.9997238512782,73.22810928277248 969,72 C 1009.0002761487218,70.77189071722752 1052.000074019245,74.61926967678264 1094,75 C 1135.999925980755,75.38073032321736 1176.9999800717417,72.29481201009699 1214,67 C 1251.0000199282583,61.70518798990302 1284.0000056937881,54.20148228282943 1321,56 C 1357.9999943062119,57.79851771717057 1398.999997153106,68.89925885858528 1440,80 C 1440,80 1440,400 1440,400 Z");
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,80 0,80 C 37.39230484541365,84.56336142268785 74.7846096908273,89.12672284537568 116,95 C 157.2153903091727,100.87327715462432 202.25386608210442,108.05647004118508 238,97 C 273.7461339178956,85.94352995881492 300.199925980755,56.64739698988404 346,60 C 391.800074019245,63.35260301011596 456.94642999487564,99.3539419992788 498,102 C 539.0535700051244,104.6460580007212 556.0143540397426,73.93683501300082 588,59 C 619.9856459602574,44.06316498699918 666.9961538461538,44.89871794871795 714,52 C 761.0038461538462,59.10128205128205 808.0010305756421,72.46829319212739 850,76 C 891.9989694243579,79.53170680787261 928.9997238512782,73.22810928277248 969,72 C 1009.0002761487218,70.77189071722752 1052.000074019245,74.61926967678264 1094,75 C 1135.999925980755,75.38073032321736 1176.9999800717417,72.29481201009699 1214,67 C 1251.0000199282583,61.70518798990302 1284.0000056937881,54.20148228282943 1321,56 C 1357.9999943062119,57.79851771717057 1398.999997153106,68.89925885858528 1440,80 C 1440,80 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#000000" fill-opacity="0.265"
+          class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
+        <style>
+          .path-1 {
+            animation: pathAnim-1 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-1 {
+            0% {
+              d: path("M 0,400 C 0,400 0,160 0,160 C 43.44062043310747,175.4718309324527 86.88124086621494,190.94366186490538 129,184 C 171.11875913378506,177.05633813509462 211.91565696824767,147.69718347283114 248,138 C 284.0843430317523,128.30281652716886 315.45613126079445,138.26760424377002 358,143 C 400.54386873920555,147.73239575622998 454.25981798857447,147.23239955208868 499,150 C 543.7401820114255,152.76760044791132 579.5045967849077,158.80279754787526 618,167 C 656.4954032150923,175.19720245212474 697.7217948717948,185.55641025641026 741,188 C 784.2782051282052,190.44358974358974 829.608223727913,184.9715614264837 861,174 C 892.391776272087,163.0284385735163 909.8453102165536,146.5573440376549 941,142 C 972.1546897834464,137.4426559623451 1017.0105354058721,144.79906242289664 1060,143 C 1102.9894645941279,141.20093757710336 1144.1125481599574,130.2464062707586 1191,131 C 1237.8874518400426,131.7535937292414 1290.539271954298,144.21531249406897 1333,151 C 1375.460728045702,157.78468750593103 1407.730364022851,158.89234375296553 1440,160 C 1440,160 1440,400 1440,400 Z");
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,160 0,160 C 35.52336256144547,175.04148873578924 71.04672512289093,190.0829774715785 113,185 C 154.95327487710907,179.9170225284215 203.33646206988175,154.70957884947524 246,147 C 288.66353793011825,139.29042115052476 325.60742659758205,149.07870713052057 368,149 C 410.39257340241795,148.92129286947943 458.23383153979,138.9755926284424 501,134 C 543.76616846021,129.0244073715576 581.4572472432576,129.0189223557099 613,139 C 644.5427527567424,148.9810776442901 669.9371794871794,168.94871794871796 712,179 C 754.0628205128206,189.05128205128204 812.7940348080245,189.18620584941826 854,184 C 895.2059651919755,178.81379415058174 918.8866812807227,168.30645865360893 952,159 C 985.1133187192773,149.69354134639107 1027.6592400690847,141.58795953614606 1076,149 C 1124.3407599309153,156.41204046385394 1178.4763584429388,179.34170320180684 1217,180 C 1255.5236415570612,180.65829679819316 1278.4353261591602,159.04522765662662 1313,152 C 1347.5646738408398,144.95477234337338 1393.7823369204198,152.4773861716867 1440,160 C 1440,160 1440,400 1440,400 Z");
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,160 0,160 C 45.82036478202281,157.2554214352142 91.64072956404561,154.51084287042838 129,159 C 166.3592704359544,163.48915712957162 195.2574465258403,175.21204995350072 232,171 C 268.7425534741597,166.78795004649928 313.32948433259315,146.64095731556873 356,148 C 398.67051566740685,149.35904268443127 439.42461614378703,172.2241207842244 479,170 C 518.575383856213,167.7758792157756 556.9720510922584,140.46255954753366 599,142 C 641.0279489077416,143.53744045246634 686.6871794871795,173.92564102564103 727,185 C 767.3128205128205,196.07435897435897 802.2792309590237,187.83487634990223 844,186 C 885.7207690409763,184.16512365009777 934.1958966767256,188.73485357474996 977,184 C 1019.8041033232744,179.26514642525004 1056.9371823340737,165.22570935109792 1093,168 C 1129.0628176659263,170.77429064890208 1164.05537398698,190.36230902085828 1199,185 C 1233.94462601302,179.63769097914172 1268.8413217180057,149.32505456546906 1309,141 C 1349.1586782819943,132.67494543453094 1394.579339140997,146.33747271726548 1440,160 C 1440,160 1440,400 1440,400 Z");
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,160 0,160 C 45.85400937577103,163.18876141130028 91.70801875154206,166.37752282260053 124,162 C 156.29198124845794,157.62247717739947 175.02193436960277,145.6786701208981 219,153 C 262.9780656303972,160.3213298791019 332.20424377004684,186.90779669380706 377,182 C 421.79575622995316,177.09220330619294 442.16109055020974,140.6901431038737 473,132 C 503.83890944979026,123.3098568961263 545.1513940291143,142.33163089069825 593,146 C 640.8486059708857,149.66836910930175 695.2333333333333,137.98333333333332 731,140 C 766.7666666666667,142.01666666666668 783.9152726375524,157.73503577596844 826,166 C 868.0847273624476,174.26496422403156 935.105576116457,175.076523562793 973,173 C 1010.894423883543,170.923476437207 1019.6624228966198,165.95886997285962 1061,161 C 1102.3375771033802,156.04113002714038 1176.244732297064,151.08799654576856 1218,150 C 1259.755267702936,148.91200345423144 1269.3586479151247,151.68914384406614 1301,154 C 1332.6413520848753,156.31085615593386 1386.3206760424378,158.15542807796692 1440,160 C 1440,160 1440,400 1440,400 Z");
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,160 0,160 C 43.44062043310747,175.4718309324527 86.88124086621494,190.94366186490538 129,184 C 171.11875913378506,177.05633813509462 211.91565696824767,147.69718347283114 248,138 C 284.0843430317523,128.30281652716886 315.45613126079445,138.26760424377002 358,143 C 400.54386873920555,147.73239575622998 454.25981798857447,147.23239955208868 499,150 C 543.7401820114255,152.76760044791132 579.5045967849077,158.80279754787526 618,167 C 656.4954032150923,175.19720245212474 697.7217948717948,185.55641025641026 741,188 C 784.2782051282052,190.44358974358974 829.608223727913,184.9715614264837 861,174 C 892.391776272087,163.0284385735163 909.8453102165536,146.5573440376549 941,142 C 972.1546897834464,137.4426559623451 1017.0105354058721,144.79906242289664 1060,143 C 1102.9894645941279,141.20093757710336 1144.1125481599574,130.2464062707586 1191,131 C 1237.8874518400426,131.7535937292414 1290.539271954298,144.21531249406897 1333,151 C 1375.460728045702,157.78468750593103 1407.730364022851,158.89234375296553 1440,160 C 1440,160 1440,400 1440,400 Z");
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,160 0,160 C 43.44062043310747,175.4718309324527 86.88124086621494,190.94366186490538 129,184 C 171.11875913378506,177.05633813509462 211.91565696824767,147.69718347283114 248,138 C 284.0843430317523,128.30281652716886 315.45613126079445,138.26760424377002 358,143 C 400.54386873920555,147.73239575622998 454.25981798857447,147.23239955208868 499,150 C 543.7401820114255,152.76760044791132 579.5045967849077,158.80279754787526 618,167 C 656.4954032150923,175.19720245212474 697.7217948717948,185.55641025641026 741,188 C 784.2782051282052,190.44358974358974 829.608223727913,184.9715614264837 861,174 C 892.391776272087,163.0284385735163 909.8453102165536,146.5573440376549 941,142 C 972.1546897834464,137.4426559623451 1017.0105354058721,144.79906242289664 1060,143 C 1102.9894645941279,141.20093757710336 1144.1125481599574,130.2464062707586 1191,131 C 1237.8874518400426,131.7535937292414 1290.539271954298,144.21531249406897 1333,151 C 1375.460728045702,157.78468750593103 1407.730364022851,158.89234375296553 1440,160 C 1440,160 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#090909" fill-opacity="0.4"
+          class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path>
+        <style>
+          .path-2 {
+            animation: pathAnim-2 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-2 {
+            0% {
+              d: path("M 0,400 C 0,400 0,240 0,240 C 42.37884947522252,234.06015771792974 84.75769895044505,228.12031543585948 123,227 C 161.24230104955495,225.87968456414052 195.34805367344228,229.57889597449184 230,234 C 264.6519463265577,238.42110402550816 299.8500863557859,243.56410066617323 339,242 C 378.1499136442141,240.43589933382677 421.2516009034144,232.16470136081534 465,227 C 508.7483990965856,221.83529863918466 553.1435100305566,219.77709389056542 598,231 C 642.8564899694434,242.22290610943458 688.1743589743589,266.7269230769231 730,261 C 771.8256410256411,255.2730769230769 810.1590540720074,219.31521380174226 848,213 C 885.8409459279926,206.68478619825774 923.1894247376114,230.01222171610775 964,234 C 1004.8105752623886,237.98777828389225 1049.0832469775476,222.63589933382676 1085,226 C 1120.9167530224524,229.36410066617324 1148.4775873521985,251.44418094858509 1187,255 C 1225.5224126478015,258.5558190514149 1275.0064036136578,243.58737687183284 1319,238 C 1362.9935963863422,232.41262312816716 1401.4967981931711,236.2063115640836 1440,240 C 1440,240 1440,400 1440,400 Z");
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,240 0,240 C 49.06656797434,242.7681356639906 98.13313594868,245.53627132798118 140,239 C 181.86686405132,232.46372867201882 216.53402417962002,216.62305035206592 247,221 C 277.46597582038,225.37694964793408 303.7307673328399,249.97152726375526 339,253 C 374.2692326671601,256.02847273624474 418.5429064890204,237.49084059291314 469,226 C 519.4570935109796,214.50915940708686 576.0976067110782,210.06511036459224 622,220 C 667.9023932889218,229.93488963540776 703.0666666666667,254.24871794871797 741,264 C 778.9333333333333,273.75128205128203 819.6357266222551,268.940017840536 857,254 C 894.3642733777449,239.05998215946403 928.3904268443129,213.99121068913814 961,212 C 993.6095731556871,210.00878931086186 1024.8025660004937,231.09513940291143 1068,243 C 1111.1974339995063,254.90486059708857 1166.3993091537134,257.62823169921614 1208,252 C 1249.6006908462866,246.37176830078388 1277.6001973846535,232.39193380022397 1314,229 C 1350.3998026153465,225.60806619977603 1395.1999013076734,232.80403309988802 1440,240 C 1440,240 1440,400 1440,400 Z");
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,240 0,240 C 43.19655336028393,246.19318168877754 86.39310672056786,252.3863633775551 131,248 C 175.60689327943214,243.6136366224449 221.6241264780125,228.64772817855714 262,226 C 302.3758735219875,223.35227182144286 337.1103873673822,233.02272390821616 372,231 C 406.8896126326178,228.97727609178384 441.9343240524588,215.26137618857825 481,211 C 520.0656759475412,206.73862381142175 563.1523164227827,211.93177133747082 606,220 C 648.8476835772173,228.06822866252918 691.4564102564102,239.01153846153846 727,236 C 762.5435897435898,232.98846153846154 791.0220425515762,216.02207481637535 831,218 C 870.9779574484238,219.97792518362465 922.4554195372847,240.9001622729602 965,241 C 1007.5445804627153,241.0998377270398 1041.1562792992845,220.3772760917839 1074,216 C 1106.8437207007155,211.6227239082161 1138.9194632655772,223.5907333599043 1184,232 C 1229.0805367344228,240.4092666400957 1287.1658676384068,245.25979046859877 1332,246 C 1376.8341323615932,246.74020953140123 1408.4170661807966,243.3701047657006 1440,240 C 1440,240 1440,400 1440,400 Z");
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,240 0,240 C 33.13909924272619,225.74561198732184 66.27819848545238,211.49122397464367 104,219 C 141.72180151454762,226.50877602535633 184.0263053009167,255.7807160887471 225,259 C 265.9736946990833,262.2192839112529 305.61658031088086,239.38591167036768 345,239 C 384.38341968911914,238.61408832963232 423.5073734555599,260.6756372297823 465,257 C 506.4926265444401,253.3243627702177 550.3539258668793,223.91153941050317 593,224 C 635.6460741331207,224.08846058949683 677.0769230769231,253.67820512820515 719,249 C 760.9230769230769,244.32179487179485 803.3383818254284,205.37564007667635 845,210 C 886.6616181745716,214.62435992332365 927.569549621363,262.81923456508946 968,266 C 1008.430450378637,269.18076543491054 1048.3834196891191,227.34742166296573 1090,226 C 1131.6165803108809,224.65257833703427 1174.8967716221603,263.7910787830477 1218,267 C 1261.1032283778397,270.2089212169523 1304.0294938222398,237.48826320484352 1341,227 C 1377.9705061777602,216.51173679515648 1408.9852530888802,228.25586839757824 1440,240 C 1440,240 1440,400 1440,400 Z");
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,240 0,240 C 42.37884947522252,234.06015771792974 84.75769895044505,228.12031543585948 123,227 C 161.24230104955495,225.87968456414052 195.34805367344228,229.57889597449184 230,234 C 264.6519463265577,238.42110402550816 299.8500863557859,243.56410066617323 339,242 C 378.1499136442141,240.43589933382677 421.2516009034144,232.16470136081534 465,227 C 508.7483990965856,221.83529863918466 553.1435100305566,219.77709389056542 598,231 C 642.8564899694434,242.22290610943458 688.1743589743589,266.7269230769231 730,261 C 771.8256410256411,255.2730769230769 810.1590540720074,219.31521380174226 848,213 C 885.8409459279926,206.68478619825774 923.1894247376114,230.01222171610775 964,234 C 1004.8105752623886,237.98777828389225 1049.0832469775476,222.63589933382676 1085,226 C 1120.9167530224524,229.36410066617324 1148.4775873521985,251.44418094858509 1187,255 C 1225.5224126478015,258.5558190514149 1275.0064036136578,243.58737687183284 1319,238 C 1362.9935963863422,232.41262312816716 1401.4967981931711,236.2063115640836 1440,240 C 1440,240 1440,400 1440,400 Z");
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,240 0,240 C 42.37884947522252,234.06015771792974 84.75769895044505,228.12031543585948 123,227 C 161.24230104955495,225.87968456414052 195.34805367344228,229.57889597449184 230,234 C 264.6519463265577,238.42110402550816 299.8500863557859,243.56410066617323 339,242 C 378.1499136442141,240.43589933382677 421.2516009034144,232.16470136081534 465,227 C 508.7483990965856,221.83529863918466 553.1435100305566,219.77709389056542 598,231 C 642.8564899694434,242.22290610943458 688.1743589743589,266.7269230769231 730,261 C 771.8256410256411,255.2730769230769 810.1590540720074,219.31521380174226 848,213 C 885.8409459279926,206.68478619825774 923.1894247376114,230.01222171610775 964,234 C 1004.8105752623886,237.98777828389225 1049.0832469775476,222.63589933382676 1085,226 C 1120.9167530224524,229.36410066617324 1148.4775873521985,251.44418094858509 1187,255 C 1225.5224126478015,258.5558190514149 1275.0064036136578,243.58737687183284 1319,238 C 1362.9935963863422,232.41262312816716 1401.4967981931711,236.2063115640836 1440,240 C 1440,240 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#090909" fill-opacity="0.53"
+          class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path>
+        <style>
+          .path-3 {
+            animation: pathAnim-3 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-3 {
+            0% {
+              d: path("M 0,400 C 0,400 0,320 0,320 C 46.94690257928599,331.15268272314904 93.89380515857198,342.305365446298 135,340 C 176.10619484142802,337.694634553702 211.371681944998,321.9312209379567 243,319 C 274.628318055002,316.0687790620433 302.619467061436,325.96975080187514 344,334 C 385.380532938564,342.03024919812486 440.15044980925813,348.18977585454275 487,336 C 533.8495501907419,323.81022414545725 572.7787337015316,293.27114577995405 615,293 C 657.2212662984684,292.72885422004595 702.7346153846154,322.725641025641 739,322 C 775.2653846153846,321.274358974359 802.2828047600069,289.82629011748185 841,294 C 879.7171952399931,298.17370988251815 930.1341655753572,337.96919850443163 965,338 C 999.8658344246428,338.03080149556837 1019.180532938564,298.2969158647916 1058,293 C 1096.819467061436,287.7030841352084 1155.1437026703866,316.8431380364023 1196,333 C 1236.8562973296134,349.1568619635977 1260.2446563798896,352.3305319895993 1298,348 C 1335.7553436201104,343.6694680104007 1387.8776718100553,331.83473400520035 1440,320 C 1440,320 1440,400 1440,400 Z");
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,320 0,320 C 48.13034504355748,312.62043785230316 96.26069008711497,305.2408757046063 139,301 C 181.73930991288503,296.7591242953937 219.08758469509763,295.65693503387797 258,294 C 296.91241530490237,292.34306496612203 337.3889711324944,290.1313841598816 376,296 C 414.6110288675056,301.8686158401184 451.3565307749245,315.8175283265957 490,311 C 528.6434692250755,306.1824716734043 569.1849057678073,282.5985025337357 607,290 C 644.8150942321927,297.4014974662643 679.9038461538461,335.78846153846155 722,345 C 764.0961538461539,354.21153846153845 813.199709616808,334.2476513124181 852,320 C 890.800290383192,305.7523486875819 919.2973153789217,297.2209332118658 958,295 C 996.7026846210783,292.7790667881342 1045.6110288675056,296.8686158401185 1092,305 C 1138.3889711324944,313.1313841598815 1182.2585691510562,325.3046034276604 1214,322 C 1245.7414308489438,318.6953965723396 1265.3546945282696,299.9129704492399 1301,297 C 1336.6453054717304,294.0870295507601 1388.3226527358652,307.04351477538006 1440,320 C 1440,320 1440,400 1440,400 Z");
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,320 0,320 C 41.280476000683265,313.655780143863 82.56095200136653,307.3115602877261 115,316 C 147.43904799863347,324.6884397122739 171.03666799521721,348.40953899295863 218,347 C 264.9633320047828,345.59046100704137 335.29237601776464,319.0502837404392 381,306 C 426.70762398223536,292.9497162595608 447.7938279337243,293.3893260452846 478,291 C 508.2061720662757,288.6106739547154 547.5323122473382,283.3924120784225 590,295 C 632.4676877526618,306.6075879215775 678.0769230769231,335.04102564102556 716,344 C 753.9230769230769,352.95897435897444 784.1599954449695,342.443485357475 829,328 C 873.8400045550305,313.556514642525 933.2830951431987,295.1850329290744 975,294 C 1016.7169048568013,292.8149670709256 1040.7076239822354,308.8163829262275 1082,315 C 1123.2923760177646,321.1836170737725 1181.8864089278597,317.54943536601564 1219,317 C 1256.1135910721403,316.45056463398436 1271.7467403063258,318.9858756097098 1305,320 C 1338.2532596936742,321.0141243902902 1389.1266298468372,320.50706219514507 1440,320 C 1440,320 1440,400 1440,400 Z");
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,320 0,320 C 45.48938772798877,327.50643208259794 90.97877545597754,335.0128641651958 134,334 C 177.02122454402246,332.9871358348042 217.57428590407858,323.45497542181477 248,325 C 278.4257140959214,326.54502457818523 298.7240809277079,339.16723414754506 342,338 C 385.2759190722921,336.83276585245494 451.52939038508987,321.8760879880051 500,321 C 548.4706096149101,320.1239120119949 579.1583575319327,333.3284139004346 612,331 C 644.8416424680673,328.6715860995654 679.8371794871795,310.8102564102564 714,309 C 748.1628205128205,307.1897435897436 781.4929245193495,321.43056045853973 829,316 C 876.5070754806505,310.56943954146027 938.191122435423,285.46750175558464 981,290 C 1023.808877564577,294.53249824441536 1047.742585738959,328.6994325191216 1083,338 C 1118.257414261041,347.3005674808784 1164.8385346087418,331.7347681679288 1206,328 C 1247.1614653912582,324.2652318320712 1282.903275826074,332.3614948091632 1321,333 C 1359.096724173926,333.6385051908368 1399.5483620869632,326.8192525954184 1440,320 C 1440,320 1440,400 1440,400 Z");
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,320 0,320 C 46.94690257928599,331.15268272314904 93.89380515857198,342.305365446298 135,340 C 176.10619484142802,337.694634553702 211.371681944998,321.9312209379567 243,319 C 274.628318055002,316.0687790620433 302.619467061436,325.96975080187514 344,334 C 385.380532938564,342.03024919812486 440.15044980925813,348.18977585454275 487,336 C 533.8495501907419,323.81022414545725 572.7787337015316,293.27114577995405 615,293 C 657.2212662984684,292.72885422004595 702.7346153846154,322.725641025641 739,322 C 775.2653846153846,321.274358974359 802.2828047600069,289.82629011748185 841,294 C 879.7171952399931,298.17370988251815 930.1341655753572,337.96919850443163 965,338 C 999.8658344246428,338.03080149556837 1019.180532938564,298.2969158647916 1058,293 C 1096.819467061436,287.7030841352084 1155.1437026703866,316.8431380364023 1196,333 C 1236.8562973296134,349.1568619635977 1260.2446563798896,352.3305319895993 1298,348 C 1335.7553436201104,343.6694680104007 1387.8776718100553,331.83473400520035 1440,320 C 1440,320 1440,400 1440,400 Z");
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,320 0,320 C 46.94690257928599,331.15268272314904 93.89380515857198,342.305365446298 135,340 C 176.10619484142802,337.694634553702 211.371681944998,321.9312209379567 243,319 C 274.628318055002,316.0687790620433 302.619467061436,325.96975080187514 344,334 C 385.380532938564,342.03024919812486 440.15044980925813,348.18977585454275 487,336 C 533.8495501907419,323.81022414545725 572.7787337015316,293.27114577995405 615,293 C 657.2212662984684,292.72885422004595 702.7346153846154,322.725641025641 739,322 C 775.2653846153846,321.274358974359 802.2828047600069,289.82629011748185 841,294 C 879.7171952399931,298.17370988251815 930.1341655753572,337.96919850443163 965,338 C 999.8658344246428,338.03080149556837 1019.180532938564,298.2969158647916 1058,293 C 1096.819467061436,287.7030841352084 1155.1437026703866,316.8431380364023 1196,333 C 1236.8562973296134,349.1568619635977 1260.2446563798896,352.3305319895993 1298,348 C 1335.7553436201104,343.6694680104007 1387.8776718100553,331.83473400520035 1440,320 C 1440,320 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#090909" fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-3" transform="rotate(-180 720 200)"></path>
+      </svg>
+
+      <h3>About Me</h3>
+      <div id="about-section">
+        <div>
+          <h4>My Picks</h4>
+          <img src="/images/hangbooks.png" alt="my picks" width="730px" />
+        </div>
+        <div class="quotes">
+          <div>
+            <p>
+              “In a split second, she redefined perfection for him. His standards
+              aligned to her exact proportions and measurements. No one else would
+              ever live up to her.” ― Helen Hoang, The Bride Test
+            </p>
+          </div>
+          <div>
+            <p>
+              “Mummy always told me, you should never let a man see your feelings
+              or the contents of your handbag.” ― Sophie Kinsella, Can You Keep a
+              Secret?
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <footer>Coded with ❤️ by Jules</footer>
+    </div>
+
+  </section>
+
+
+
+  <script>
+    const menuButton = document.querySelector(".material-symbols-outlined");
+    const list = document.querySelector("ul");
+    const logo = document.querySelector(".logo");
+    const buttons = document.querySelector(".buttons");
+    const closeButton = document.querySelector(".close-button")
+
+
+
+
+
+    menuButton.addEventListener("click", () => {
+      const visibility = list.getAttribute("data-visible");
+      /* const visibility = logo.getAttribute("data-visible"); */
+      /*  const visibility = buttons.getAttribute("data-visible"); */
+      const aria = closeButton.getAttribute("aria-expanded");
+
+      if (aria === "false") {
+        menuButton.setAttribute("aria-expanded", true);
+        closeButton.setAttribute("aria-expanded", true);
+      } else {
+        menuButton.setAttribute("aria-expanded", false);
+        closeButton.setAttribute("aria-expanded", false);
+        logo.setAttribute("aria-expanded", true);
+      }
+
+
+      if (visibility === "false") {
+        list.setAttribute("data-visible", true);
+        logo.setAttribute("data-visible", true);
+        buttons.setAttribute("data-visible", true);
+      }
+      else if (visibility === "true") {
+        list.setAttribute("data-visible", false);
+        logo.setAttribute("data-visible", false);
+        buttons.setAttribute("data-visible", false);
+
+
+      }
+    });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Log in</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+
+    <style>
+        .popup {
+            position: absolute;
+            top: -150%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.25);
+            width: 500px;
+            padding: 20px 30px;
+            background: #fff;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+        }
+
+        .popup.active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+            background: #888;
+            color: #eee;
+            text-align: center;
+            line-height: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .popup .form .form-element input[type="text"],
+        .popup .form .form-element input[type="password"] {
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .popup .form .form-element input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .popup .form .form-element button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: #222;
+            color: #f5f5f5;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+
+
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Lora', serif;
+            margin: 10px;
+        }
+
+        .material-symbols-outlined {
+            text-decoration: none;
+            border: 2px solid grey;
+            border-radius: 50%;
+            padding: 10px;
+            position: absolute;
+            font-size: 17px;
+            left: 87%;
+            top: 25px;
+
+        }
+
+        .material-symbols-outlined:hover {
+            background-color: rgba(255, 255, 255, 0.488);
+            border: 2px solid rgba(128, 128, 128, 0.616);
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+
+        .message span:hover {
+            text-decoration: underline;
+            color: #060320a3;
+            text-decoration-color: #060320a3;
+            cursor: pointer;
+        }
+
+
+        h2,
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form {
+
+            height: 700px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        span {
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+            font-family: 'Lora', serif;
+            color: #080710;
+        }
+
+
+        label {
+
+            font-family: 'Lora', serif;
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+
+        }
+
+        input {
+
+            display: block;
+            border: 1px solid black;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.09);
+            border-radius: 15px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        input:focus {
+            background-color: rgba(34, 42, 45, 0.214);
+            border: 1px solid white;
+        }
+
+        ::placeholder {
+
+            color: #080710;
+        }
+
+        button {
+
+
+
+            margin-top: 20px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Lora', serif;
+        }
+
+        button:hover {
+            background-color: rgba(128, 128, 128, 0.181);
+        }
+
+        .message span {
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+            font-family: 'Lora', serif;
+            color: #080710;
+        }
+
+        .message {
+            margin: 0;
+        }
+
+        textarea {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <a href="project.html"><span class="material-symbols-outlined">
+
+                arrow_back_ios_new
+
+            </span></a>
+        <h1>Join us</h1>
+        <label for="name">First name</label>
+        <input type="text" placeholder="First name" id="fname">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email or Phone" id="email">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button class="signup-button">Sign up</button>
+        <h2>Already have an account?</h2>
+        <button class="log-in-button">Log In</button>
+        <p>Or...</p>
+        <div class="message">
+            <p><span>Leave a message</span></p>
+        </div>
+
+    </form>
+
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h3>Tell me something...</h3>
+            <div class="form-element">
+                <label for="ffname">First name</label>
+                <input type="name" id="ffname" placeholder="First name">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" id="mail" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="message">Message</label>
+                <textarea rows="5" type="text" id="message" placeholder="Say something"></textarea>
+            </div>
+
+            <div class="form-element">
+                <button class="submit">Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    let fname = document.getElementById('fname');
+    let h1 = document.querySelector("h1");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let login = document.querySelector(".log-in-button");
+    let signup = document.querySelector(".signup-button");
+    let message = document.querySelector(".message");
+    let ffname = document.querySelector("#ffname");
+    let submit = document.querySelector(".submit");
+    let h3 = document.querySelector("h3");
+
+
+
+    function validate() {
+        if (fname.value == "") {
+            alert("Enter a name")
+        } else
+            if (email.value === "") {
+                alert("Enter your email")
+            } else
+                if (password.value === "") {
+                    alert("Enter your password")
+                } else {
+                    alert("Sorry " + fname.value + ", we're not accepting new members at the moment😟.");
+
+
+                }
+
+
+    }
+
+
+
+    signup.addEventListener("click", validate);
+    login.addEventListener("click", () => {
+        alert("It seems you're not a member. Sign up instead!");
+    })
+
+
+
+    document.querySelector(".message").addEventListener("click", function () {
+        document.querySelector(".popup").classList.add("active");
+    });
+    document.querySelector(".popup .close-btn").addEventListener("click", function () {
+        document.querySelector(".popup").classList.remove("active");
+    });
+
+    submit.addEventListener("click", () => {
+        if (ffname.value === "") {
+            alert("Please fill all before submitting")
+        } else {
+            h3.innerHTML = "Okay, " + ffname.value + "! Gotcha👍";
+        }
+
+    })
+</script>
+
+</html>
