@@ -639,10 +639,107 @@
       flex-wrap: nowrap;
       overflow: scroll;
     }
+    
+    /* for preloader */
+
+    .preloader-wrapper {
+      background-color: #848386;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      z-index: 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100vw;
+      height: 100vh;
+
+    }
+
+
+    h1.preloader-h1 {
+      position: relative;
+
+      font-size: 45px;
+      font-weight: 300;
+      font-family: "Inconsolata", monospace;
+      position: relative;
+      width: max-content;
+    }
+
+
+
+    h1.preloader-h1::before,
+    h1.preloader-h1::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+
+    h1.preloader-h1::before {
+      background-color: #848386;
+
+      animation: typewrite 3s steps(9) forwards;
+    }
+
+    h1.preloader-h1::after {
+      width: 3px;
+
+      background: black;
+      animation: typewrite 3s steps(9) forwards,
+        blink 750ms steps(14) infinite;
+
+
+    }
+
+    @keyframes typewrite {
+      to {
+        left: 100%;
+      }
+    }
+
+    @keyframes blink {
+      to {
+        background: transparent;
+      }
+    }
+
+    h2.preloader-h2 {
+      position: relative;
+      font-size: 25px;
+
+      font-family: fantasy;
+      opacity: 0;
+      animation: fadeIn 1.5s ease infinite;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    
   </style>
 </head>
 
 <body>
+  <div class="preloader-wrapper">
+    <h1 class="preloader-h1">Booksite♥︎</h1>
+    <h2 class="preloader-h2">Loading</h2>
+  </div>
+  
   <section>
     <div id="landing-page">
       <nav>
@@ -962,8 +1059,16 @@
   </section>
 
 
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script>
+    
+     $(window).load(function () {
+
+      $(".preloader-wrapper").delay(5000).fadeOut("slow");
+
+
+    })                       
+                           
     const menuButton = document.querySelector(".material-symbols-outlined");
     const list = document.querySelector("ul");
     const logo = document.querySelector(".logo");
