@@ -652,7 +652,7 @@
       overflow: hidden;
       margin: 0;
       padding: 0;
-      z-index: 2;
+      z-index: 1001;
 
       display: flex;
       flex-direction: column;
@@ -691,14 +691,14 @@
     h1.preloader-h1::before {
       background-color: #848386;
 
-      animation: typewrite 3s steps(9) forwards;
+      animation: typewrite 3s steps(8) forwards;
     }
 
     h1.preloader-h1::after {
       width: 3px;
 
       background: black;
-      animation: typewrite 3s steps(9) forwards,
+      animation: typewrite 3s steps(8) forwards,
         blink 750ms steps(14) infinite;
 
 
@@ -736,8 +736,8 @@
 
 <body>
   <div class="preloader-wrapper">
-    <h1 class="preloader-h1">Booksite♥︎</h1>
-    <h2 class="preloader-h2">Loading</h2>
+    <h1 class="preloader-h1">Booksite</h1>
+    <h2 class="preloader-h2">Loading♥︎..</h2>
   </div>
   
   <section>
